@@ -3,7 +3,7 @@
  * HTML con el resto de los elementos .ts del programa
  * @author: Miguel Arturo Reina - 202014739
  */
-import { dataSeries } from './data';
+import { dataSeries } from './data.js';
 /* Para el listado de series */
 let seriesTbody = document.getElementById("series");
 renderCoursesInTable(dataSeries);
@@ -25,7 +25,6 @@ function renderCardSeries() {
             const row = target.parentElement;
             const rowData = dataSeries.find((data) => data.id == Number(row.id));
             const cardContent = `
-        
         <div class="card-body">
           <img src="${rowData === null || rowData === void 0 ? void 0 : rowData.image}" class="img-fluid" alt="Responsive image">
           <h5 class="card-title">${rowData === null || rowData === void 0 ? void 0 : rowData.name}</h5>

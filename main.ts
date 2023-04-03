@@ -4,7 +4,7 @@
  * @author: Miguel Arturo Reina - 202014739
  */
 
-import { dataSeries } from './data';
+import { dataSeries } from './data.js';
 import { Serie } from './serie.js';
 
 /* Para el listado de series */
@@ -18,6 +18,7 @@ promedioSeries.innerHTML = ` ${getAverageSeassons(dataSeries)}`
 /* Para renderizar la carta con el detalle de la serie */
 let cardElement: HTMLElement = document.getElementById("carta-series")!;
 renderCardSeries();
+
 
 
 
@@ -37,7 +38,6 @@ function renderCardSeries(): void
       
       const cardContent = 
       `
-        
         <div class="card-body">
           <img src="${rowData?.image}" class="img-fluid" alt="Responsive image">
           <h5 class="card-title">${rowData?.name}</h5>
