@@ -6,16 +6,16 @@ export class Serie {
     id: number;
     name: String;
     channel: String;
-    seassons: number;
+    seasons: number;
     description: String;
     link: String;
     image: String;
-    constructor( pID: number, pName: string,  pChannel: string,  pSeassons: number, pDescription:String, pLink: String, pImage: String)
+    constructor( pID: number, pName: string,  pChannel: string,  pSeasons: number, pDescription:String, pLink: String, pImage: String)
     {
         this.id = pID;
         this.name = pName;
         this.channel = pChannel;
-        this.seassons = pSeassons;
+        this.seasons = pSeasons;
         this.description = pDescription;
         this.link = pLink;
         this.image =pImage;
